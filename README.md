@@ -1,18 +1,24 @@
 # Features
-- Generate a layout
-- Save a Layout
+
+## Generate a layout
+- What data can we pre-generate for the user?
+
+## Save a Layout
   - How much can we save?
   - i3 we can probably start with their built in saving, but for sway we'll have to do more of it ourselves
-- Load a layout
+
+## Load a layout
   - Gives you the correct container layout
   - Starts up the correct programs in that layout
   - Stop you from loading the same layout again?
-- Configuration
+
+## Configuration
   - YAML format (epic)
   - Variable Expansion
   - Enviroment Variables allowed
   - Configuration Inheritance
 
+### Possible Layout
 ```YAML
 inherits: base
 variables:
@@ -23,19 +29,20 @@ variables:
     dir: ~/sourcecode/work
 layout:
     DP-1:
-        code: code -r {dir}
+        @code: code -r {dir}
 
         terminal:
             vsplit:
-                exec: {term}
+                open: {term}
                 stacked:
-                - {term} -C "be rails s"
-                - {term} -C "npm dev"
+                  open: |
+                   {term} -C "be rails s"
+                   {term} -C "npm dev"
 
     DP-2:
-        chat:
-            - slack
-            - Discord
+        chat: |
+           slack
+           Discord
 ```
 
 # Notes

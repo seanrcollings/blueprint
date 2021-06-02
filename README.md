@@ -37,3 +37,7 @@ layout:
             - slack
             - Discord
 ```
+
+# Notes
+- We might be able to hide things in the scratchpad workspace before placing them in the correct location
+- Marks allows us to "tag" a container and then find it later

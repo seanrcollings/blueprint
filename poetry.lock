@@ -271,6 +271,14 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "result"
+version = "0.6.0"
+description = "A rust-like result type for Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -298,7 +306,7 @@ python-versions = "*"
 name = "types-pyyaml"
 version = "0.1.5"
 description = "Typing stubs for PyYAML"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -321,7 +329,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "d7f2be724ad8602f19c99090994474002957188a8e07e8a22842e3613a3a828b"
+content-hash = "ceb1b6ce85a328503487ff818fa291c32cd2e32d5c622057bdf0a0b7e7ef0af8"
 
 [metadata.files]
 appdirs = [
@@ -519,6 +527,10 @@ regex = [
     {file = "regex-2021.4.4-cp39-cp39-win32.whl", hash = "sha256:fa4537fb4a98fe8fde99626e4681cc644bdcf2a795038533f9f711513a862ae6"},
     {file = "regex-2021.4.4-cp39-cp39-win_amd64.whl", hash = "sha256:97f29f57d5b84e73fbaf99ab3e26134e6687348e95ef6b48cfd2c06807005a07"},
     {file = "regex-2021.4.4.tar.gz", hash = "sha256:52ba3d3f9b942c49d7e4bc105bb28551c44065f139a65062ab7912bef10c9afb"},
+]
+result = [
+    {file = "result-0.6.0-py3-none-any.whl", hash = "sha256:31d632b1aaca74e3798e700ae5a9a9a752fee639a5f054080bed7c8086170567"},
+    {file = "result-0.6.0.tar.gz", hash = "sha256:3c69a9d76b305957eb8d7f036cb5ed5af561f48624f705b5e9cff042f560c3d2"},
 ]
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},

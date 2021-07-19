@@ -11,7 +11,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
-arc-cli = "^2.3.0"
+arc-cli = "^4.0.0"
 i3ipc = "^2.2.1"
 PyYAML = "^5.4.1"
 result = "^0.6.0"
@@ -25,7 +25,7 @@ pytest = "^6.2.4"
 types-PyYAML = "^0.1.5"
 
 [tool.poetry.scripts]
-blueprint = "blueprint.__init__:main"
+blueprint = "blueprint.cli.__init__:cli"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
